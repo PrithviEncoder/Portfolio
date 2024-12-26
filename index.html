@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa53339592.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--*****************Home section starts********************-->
+    <div id="Home">
+        <div class="container">
+            <nav id="navbar">
+
+                <div class="image">
+                    <h class="icon"><span class="icon-letter">P</span><span class="rest-text">RITHVI.</span></h>
+                </div>
+
+                <div class="triple-line" onclick="bars();"><i class="fa-solid fa-bars"></i></div>
+
+                <ul class="tabs">
+                    <div class="cancel" onclick="remove();"><p>Click to remove</p></div>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div>
+                <h1 class="name">Hi I'M <span class="surname">PRITHVI.</span></h1>
+                <h1 class="home-text">
+                    I'M a <span class="text-animation"></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--**************About section starts*************** -->
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1"><img class="about-image" src="images/skill.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About <span style="color:red;">Me</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus, soluta iure assumenda
+                        libero perferendis odio cum fugit quisquam neque magnam optio nam exercitationem aliquam sint
+                        accusantium corporis non. Dolorem nesciunt corporis quibusdam molestiae dignissimos! Obcaecati
+                        recusandae iste libero, suscipit ullam nulla unde illo cum amet hic quae consequuntur explicabo
+                        consequatur beatae! Consequuntur at consequatur, ut explicabo laudantium possimus ipsam.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-link" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>xyz</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>abc</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>sgh</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>yut</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>abc</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>sgh</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>kjl</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>abc</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>sgh</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*******************portfolio**********************-->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span style="color:red;">My</span> Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/kitchen.jpg" alt="project">
+                    <div class="layer">
+                        <h>Cloud KItchen</h>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, laudantium!</p>
+                        <a href="#">
+                            <div class="link-image-box"><img src="images/Link.png" alt="link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/auth.jpg" alt="">
+                    <div class="layer">
+                        <h>Cloud KItchen</h>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, laudantium!</p>
+                        <a href="#">
+                            <div class="link-image-box"><img src="images/Link.png" alt="link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecomm.jpg" alt="">
+                    <div class="layer">
+                        <h>Cloud KItchen</h>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, laudantium!</p>
+                        <a href="https://prithviencoder.github.io/myntraFunctionalClone/ ">
+                            <div class="link-image-box"><img src="images/Link.png" alt="link"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--***************contact*****************-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span style="color:red;">Me</span></h1>
+                    <p><i class="fas fa-paper-plane"></i>prithvichawda0@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7014274155</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1DyGr2eG7b/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/prithvi-singh-chawda"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PrithviEncoder"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/prithvi.c_2002/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" class="btn btn2" download="My_Resume">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" required placeholder="Your Name">
+                        <input type="email" name="Email" required placeholder="Your Email">
+                        <textarea name="Messege" placeholder="Your Messege" rows="6"></textarea>
+                        <p class="msg"></p>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        //elements
+        var tablinks = document.getElementsByClassName('tab-link');
+        var tabcontents = document.querySelectorAll('.tab-contents');
+
+        //auto type lettler class object through cdn 
+        var typed = new Typed(".text-animation", {
+            strings: ["Web Developer", "MERN Stack Developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+
+
+
+        //onclick function in about section
+        function openTab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!--script for form submisson to google sheets-->
+    <script>
+
+        //variables
+        const script_url=`https://script.google.com/macros/s/AKfycbzSnosJszrpz0apXRnWqonHqJIGxLG94nZf2S1qq6uNpUr4jAOx6Vy_JRSnRPtZKAN9DA/exec`;
+        const form=document.forms['submit-to-google-sheet']
+        let messege=""
+        const msg=document.querySelector('.msg')
+
+
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            fetch(script_url,{
+                method:'POST',
+                body:new FormData(form),
+            })
+            .then(res=>{
+                console.log("success!",res)
+                messege="Messege sent successfully";
+                msg.innerHTML=messege
+                setTimeout(()=>{
+                    messege=""
+                    msg.innerHTML=messege
+                },3000)
+                form.reset();
+
+            })
+            .catch(error=>{
+                console.error("Error!:",error.messege)
+                messege="Error in sending messege!";
+                msg.innerHTML=messege
+                setTimeout(()=>{
+                    messege=""
+                    msg.innerHTML=messege;
+                },3000)
+                form.reset();
+
+            })
+        })
+
+    
+    </script>
+
+<!--below script for responsiveness basically nav bar -->
+<script>
+
+  //variables
+  const threeLine=document.querySelector(".triple-line")
+  const tabs=document.querySelector(".tabs");
+
+    function bars(){
+    threeLine.style.display="none";
+    tabs.style.right="0";    
+    }
+
+    function remove(){
+        tabs.style.right="-30vw";
+        threeLine.style.display="block";
+    }
+</script>
+</body>
+
+</html>

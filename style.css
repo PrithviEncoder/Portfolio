@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.triple-line{
+    display: none;
+}
+.cancel{
+    display: none;
+}
+.icon-letter {
+    font-size: 40px;
+    color: red;
+}
+
+.rest-text {
+    font-size: 40px;
+}
+
+.container {
+    padding: 10px, 10%;
+}
+
+#navbar {
+    display: flex;
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+}
+
+nav ul li a::after {
+    content: "";
+    border-radius: 5px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.home-text {
+    margin-top: 3vh;
+    margin-left: 8vw;
+}
+
+.text-animation {
+    color: red;
+}
+
+.name {
+    color: #fff;
+    margin-top: 20vh;
+    margin-left: 8vw;
+}
+
+.surname {
+    color: #ff004f;
+}
+
+/*-----------about section------------*/c
+#About {
+    width: 100%;
+    height: 95vh;
+}
+
+.row {
+    width: 68vw;
+    /*change this accordingh to details size*/
+    height: 70vh;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25vh;
+
+}
+
+.about-col1 {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    border-radius: 7px;
+    height: 100%;
+}
+
+.about-col2 {
+    flex-basis: 53%;
+}
+
+.sub-title {
+    margin-bottom: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 50px;
+    position: relative;
+}
+
+.tab-link::after {
+    content: "";
+    background: #ff004f;
+    border-radius: 6px;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    font-size: 14px;
+    color: #b54769;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*--------my work------------*/
+#Portfolio {
+    margin-top: 70px;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* grid-template-rows:500px; */
+    grid-gap: 25px;
+    margin: 50px 0;
+}
+
+.work {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work img {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.layer {
+    width: 100%;
+    height: 50%;
+    /*vary from 0 to 50 .either 0 or 50 are best option*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    transition: height 0.5s;
+
+}
+
+.layer h {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.layer p {
+    margin-bottom: 30px;
+}
+
+.layer a {
+    background-color: #fff;
+    padding: 17px;
+    border-radius: 50%;
+}
+
+.link-image-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/*------------contact--------------*/
+#Contact {
+    padding: 60px 0;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px
+}
+
+.contact-left p i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #ff004f;
+}
+
+.social-icons {
+    margin-top: 30px
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    color: #ababab;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-6px);
+    color: #ff004f;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-right form .btn2 {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 14px 60px;
+}
+
+.msg {
+    color: green;
+}
+
+/*---------------------responsiveness--------------------*/
+
+@media screen and (min-width:950px) and (max-width:1275px){
+  
+    /*changing row width will change all element width since row is used in all except Home*/
+    .row {
+        width: 92vw;
+        /*change width accordingh to sreen size*/
+        height: 70vh;
+        margin: 20vh auto;       
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:950px){
+    .row {
+        width: 94vw;
+        /*change width accordingh to sreen size*/
+        height: 70vh;
+        margin: 20vh auto;       
+    }
+    .about-col1 {
+        position: relative;
+        width: 40vw;
+        height: 55vw;
+        margin: auto;
+    }
+}
+    
+
+
+@media screen and (max-width:750px) {
+    #navbar {
+        width: 95%;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-size: 17px;
+    }
+
+    #About {
+        width: 100%;
+        height: 130vh;
+        margin: 20vh auto;
+    }
+
+    .row {
+        display: block;
+        width: 80vw;
+        /*change this accordingh to details size*/
+        height: 70vh;
+        margin: auto;
+        margin-top: 10vh;
+        margin-left: 13vw;
+    }
+
+    .about-col1 {
+        position: relative;
+        width: 50vw;
+        height: 65vw;
+        margin: auto;
+    }
+
+    .about-image {
+        position: absolute;
+        border-radius: 7px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-col2 {
+        margin: 10vh auto;
+    }
+
+
+    #Contact {
+        padding: 60px 0;
+        /* width: 100vw; */
+    }
+
+    .contact-left {
+        width: 100%;
+        /* border:1px solid red; */
+
+    }
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+    #Home {
+      
+        background-image: url(images/header.jpg);
+        background-position:65% center;
+    }
+
+    .icon-letter {
+        font-size: 30px;
+    }
+
+    .rest-text {
+        font-size: 30px;
+    }
+    #navbar {
+        display: block;
+        width: 100%;
+        height: 70px;
+        margin: auto;
+        padding-right: 30px;
+        position: relative;
+    }
+    .icon{
+        position:absolute;
+        top:2vh;
+        left:5vw;
+    }
+
+    .tabs {
+        position:absolute;
+        right: -30vw;
+        top:0;
+        width: 30vw;
+        background:#ff004f;
+        font-weight: 500;
+        border-bottom-left-radius:10px;
+        height: 45vh;
+        transition:right 0.5s ease-out;
+    }
+    .triple-line{
+        display: block;
+        position:absolute;
+        top:2vh;
+        right:20vw;
+        font-size: 25px;
+    
+    }
+ .cancel{
+    background:#ababab;
+    font-size: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+
+ }
+ 
+    nav ul li {
+        margin-right: 25px;
+        margin-bottom:20px;
+        margin:18px 25px ;
+    }
+
+    nav ul li a::after {
+
+        background:#fff;
+    }
+
+    .home-text {
+        margin-top: 3vh;
+        margin-left: 3vw;
+        font-size: 20px;
+    }
+
+    .name {
+        color: #fff;
+        margin-top: 20vh;
+        margin-left: 3vw;
+    }
+
+   
+    #About {
+        width: 100%;
+        height: 107vh;
+        margin: 20vh auto;
+    }
+
+    .tab-titles {
+        display: flex;
+        margin: 20px 0 20px;
+    }
+
+    .tab-link {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 50px;
+        position: relative;
+    }
+
+
+}
