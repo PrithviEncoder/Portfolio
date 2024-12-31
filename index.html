@@ -22,7 +22,9 @@
                 <div class="triple-line" onclick="bars();"><i class="fa-solid fa-bars"></i></div>
 
                 <ul class="tabs">
-                    <div class="cancel" onclick="remove();"><p>Click to remove</p></div>
+                    <div class="cancel" onclick="remove();">
+                        <p>Click to remove</p>
+                    </div>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
@@ -104,9 +106,13 @@
                     <div class="layer">
                         <h>Cloud KItchen</h>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, laudantium!</p>
-                        <a href="https://authenticationsystem-bg4k.onrender.com">
+                        <a href="https://authenticationsystem-bg4k.onrender.com" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="The application may take a few seconds to load due to hosting on a free plan.">
                             <div class="link-image-box"><img src="images/Link.png" alt="link"></div>
                         </a>
+
                     </div>
                 </div>
                 <div class="work">
@@ -114,7 +120,7 @@
                     <div class="layer">
                         <h>Cloud KItchen</h>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, laudantium!</p>
-                        <a href="https://prithviencoder.github.io/myntraFunctionalClone/ ">
+                        <a href="https://prithviencoder.github.io/myntraFunctionalClone/">
                             <div class="link-image-box"><img src="images/Link.png" alt="link"></div>
                         </a>
                     </div>
@@ -132,10 +138,13 @@
                     <p><i class="fas fa-paper-plane"></i>prithvichawda0@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i>7014274155</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/share/1DyGr2eG7b/"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/prithvi-singh-chawda"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/1DyGr2eG7b/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/prithvi-singh-chawda"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/PrithviEncoder"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/prithvi.c_2002/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.instagram.com/prithvi.c_2002/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
                     </div>
                     <a href="images/Resume.pdf" class="btn btn2" download="My_Resume">Download Resume</a>
                 </div>
@@ -188,62 +197,62 @@
     <script>
 
         //variables
-        const script_url=`https://script.google.com/macros/s/AKfycbzSnosJszrpz0apXRnWqonHqJIGxLG94nZf2S1qq6uNpUr4jAOx6Vy_JRSnRPtZKAN9DA/exec`;
-        const form=document.forms['submit-to-google-sheet']
-        let messege=""
-        const msg=document.querySelector('.msg')
+        const script_url = `https://script.google.com/macros/s/AKfycbzSnosJszrpz0apXRnWqonHqJIGxLG94nZf2S1qq6uNpUr4jAOx6Vy_JRSnRPtZKAN9DA/exec`;
+        const form = document.forms['submit-to-google-sheet']
+        let messege = ""
+        const msg = document.querySelector('.msg')
 
 
-        form.addEventListener('submit',(e)=>{
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
-            fetch(script_url,{
-                method:'POST',
-                body:new FormData(form),
+            fetch(script_url, {
+                method: 'POST',
+                body: new FormData(form),
             })
-            .then(res=>{
-                console.log("success!",res)
-                messege="Messege sent successfully";
-                msg.innerHTML=messege
-                setTimeout(()=>{
-                    messege=""
-                    msg.innerHTML=messege
-                },3000)
-                form.reset();
+                .then(res => {
+                    console.log("success!", res)
+                    messege = "Messege sent successfully";
+                    msg.innerHTML = messege
+                    setTimeout(() => {
+                        messege = ""
+                        msg.innerHTML = messege
+                    }, 3000)
+                    form.reset();
 
-            })
-            .catch(error=>{
-                console.error("Error!:",error.messege)
-                messege="Error in sending messege!";
-                msg.innerHTML=messege
-                setTimeout(()=>{
-                    messege=""
-                    msg.innerHTML=messege;
-                },3000)
-                form.reset();
+                })
+                .catch(error => {
+                    console.error("Error!:", error.messege)
+                    messege = "Error in sending messege!";
+                    msg.innerHTML = messege
+                    setTimeout(() => {
+                        messege = ""
+                        msg.innerHTML = messege;
+                    }, 3000)
+                    form.reset();
 
-            })
+                })
         })
 
-    
+
     </script>
 
-<!--below script for responsiveness basically nav bar -->
-<script>
+    <!--below script for responsiveness basically nav bar -->
+    <script>
 
-  //variables
-  const threeLine=document.querySelector(".triple-line")
-  const tabs=document.querySelector(".tabs");
+        //variables
+        const threeLine = document.querySelector(".triple-line")
+        const tabs = document.querySelector(".tabs");
 
-    function bars(){
-    threeLine.style.display="none";
-    tabs.style.right="0";    
-    }
+        function bars() {
+            threeLine.style.display = "none";
+            tabs.style.right = "0";
+        }
 
-    function remove(){
-        tabs.style.right="-30vw";
-        threeLine.style.display="block";
-    }
-</script>
+        function remove() {
+            tabs.style.right = "-30vw";
+            threeLine.style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
