@@ -197,7 +197,7 @@
     <script>
 
         //variables
-        const script_url = `https://script.google.com/macros/s/AKfycbzSnosJszrpz0apXRnWqonHqJIGxLG94nZf2S1qq6uNpUr4jAOx6Vy_JRSnRPtZKAN9DA/exec`;
+        const script_url = `https://script.google.com/macros/s/AKfycbzv0AAEvwwLw5yxpwY7dZhP2zGfvELUSYGQsDNUJ4Gpnq91-gXVuCVUBrKUSs_3rbloxA/exec`;
         const form = document.forms['submit-to-google-sheet']
         let messege = ""
         const msg = document.querySelector('.msg')
@@ -244,12 +244,21 @@
         const tabs = document.querySelector(".tabs");
 
         function bars() {
-            threeLine.style.display = "none";
-            tabs.style.right = "0";
+            tabs.style.right="-30vw";
+            setTimeout(() => {
+                tabs.style.visibility="visible";
+                tabs.style.right = "0";
+                threeLine.style.display = "none";
+            }, 200);
+        
         }
 
         function remove() {
             tabs.style.right = "-30vw";
+            setTimeout(() => {
+                tabs.style.visibility="hidden";
+                tabs.style.right="0";
+            }, 400);
             threeLine.style.display = "block";
         }
     </script>
