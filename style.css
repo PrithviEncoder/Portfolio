@@ -556,8 +556,8 @@ nav ul li a:hover::after {
 
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     #About{
-        margin-bottom: 12rem;
+        margin-bottom: 15rem;
     }
 }
