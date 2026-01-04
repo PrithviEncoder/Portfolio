@@ -561,4 +561,12 @@ nav ul li a:hover::after {
     #About{
         margin-bottom: 15rem;
     }
+    .work-list {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows:450px;
+    place-content:center;
+    grid-gap: 25px;
+    margin: 50px 10px;
+}
 }
